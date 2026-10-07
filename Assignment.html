@@ -11,14 +11,22 @@
             font-size: 30px;
             color: gold;
         }
+        #intro
+        {
+            color: blue;
+        }
+        .note 
+        {
+            color: red;
+        }
     </style>
 </head>
 
 <body>
-    <header>
+    <header style="background-color: black;width: 100%;height: 50px;">
         <h1>Example College</h1>
     </header>
-    <nav>
+    <nav style="background-color: aliceblue; width: 100%;height: 60px;">
 
         <a href="/">Home</a>
         <a href="/about">About</a>
@@ -32,9 +40,10 @@
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </aside>
-        <section>
+        <section class="section">
             <article>
-                <video width="1400" height="500" controls>
+                <p id="intro" class="note" >Hello Css!</p>
+                <video width="" height="500" controls>
                     <source src="videoplayback (1).mp4">
                     Not available
                 </video>
@@ -50,7 +59,7 @@
                 </iframe>
             </article>
         </section>
-        <section>
+        <section class="section">
             <article>
                 <p>
                     Mirai School of Technology is an AI-first undergraduate engineering institution founded in India in
@@ -59,10 +68,9 @@
             </article>
         </section>
     </main>
-    <footer >
-        <p style="color: blue; font-size: 20px;">&copy; 2026 My website. All rights reserved</p>
-        <p style="color: blue; font-size: 20px;">Contact: taliyanshaurya@gmail.com</p>
+    <footer style="background-color: rgb(44, 43, 43);height: 100px;">
+        <p style="color: rgb(224, 224, 229); font-size: 20px;">&copy; 2026 My website. All rights reserved</p>
+        <p style="color: rgb(245, 245, 247); font-size: 20px;">Contact: taliyanshaurya@gmail.com</p>
     </footer>
 </body>
-
 </html>
