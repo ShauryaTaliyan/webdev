@@ -11,13 +11,53 @@
             font-size: 30px;
             color: gold;
         }
-        #intro
-        {
+
+        #intro {
+            background-color: rgb(22, 194, 252);
+            width: max-content;
             color: blue;
+            border: 10px dotted rgb(254, 252, 252);
+            padding: 0%;
         }
-        .note 
-        {
+
+        .note {
             color: red;
+        }
+
+        video {
+            background-color: black;
+            border: 5px solid white;
+            width: 100%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        audio {
+            background-color: azure;
+            width: 100%;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+        }
+
+        footer {
+            position: sticky;
+            bottom: 0;
+        }
+
+        .box {
+            color: white;
+            width: 200px;
+            height: 150px;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 10px;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -42,7 +82,8 @@
         </aside>
         <section class="section">
             <article>
-                <p id="intro" class="note" >Hello Css!</p>
+                <p class="box">Lorem ipsum dolor </p>
+                <p id="intro" class="note">Hello Css!</p>
                 <video width="" height="500" controls>
                     <source src="videoplayback (1).mp4">
                     Not available
@@ -73,4 +114,5 @@
         <p style="color: rgb(245, 245, 247); font-size: 20px;">Contact: taliyanshaurya@gmail.com</p>
     </footer>
 </body>
+
 </html>
