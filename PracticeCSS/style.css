@@ -1,0 +1,39 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Bitcount Ink";
+}
+.hero
+{
+    height: 100vh;
+    background-color: crimson;
+    text-align: center;
+    border: 5px solid white;
+}
+button:hover
+{
+    color: blue;
+    background-color: black;
+    height: 50vh;
+    width: 50lvw;
+    font-size: 5rem;
+}
+nav
+{
+    background: black;
+}
+.logo
+{
+    width: 100%;
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+}
