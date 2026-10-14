@@ -1,0 +1,513 @@
+GUYS, WE ARE BUILDING THE FULL VERSION OF **SCAMSHIELD AI**.
+
+The idea is an always-running AI safety layer for a computer that can detect scams from things like messages, links, QR codes, screenshots, copied text and other suspicious activity, then warn the user immediately.
+
+We have very little time, so everyone has a separate responsibility. **Use AI heavily**, but don't just ask AI to “make the whole thing.” Understand what you receive, test it and make sure it actually works.
+
+━━━━━━━━━━━━━━━━━━━━
+👤 MEMBER 1 — CORE SYSTEM / TEAM LEAD
+━━━━━━━━━━━━━━━━━━━━
+
+STUDY:
+- How background applications work
+- System tray applications
+- Processes and background services
+- How different modules communicate
+- Basic cybersecurity architecture
+- APIs and JSON
+- Git/GitHub and merging code
+
+RESEARCH:
+Find the best practical way to make our application run continuously in the background.
+
+WITH AI:
+Ask AI to help design the complete application architecture.
+Ask it to create the base project.
+Ask it to explain every major component.
+Ask AI to help integrate everyone's modules.
+
+YOUR OUTPUT:
+- Main project repository
+- Working application launcher
+- Background service
+- Integration of everyone's modules
+- Final build that everyone can run
+
+IMPORTANT:
+You are responsible for making everyone's code work together.
+
+━━━━━━━━━━━━━━━━━━━━
+👤 MEMBER 2 — AI SCAM DETECTION ENGINE
+━━━━━━━━━━━━━━━━━━━━
+
+STUDY:
+- Prompt engineering
+- LLM APIs
+- Classification
+- Risk scoring
+- JSON responses
+- False positives / false negatives
+- Scam indicators
+
+RESEARCH:
+Find common characteristics of:
+- Phishing
+- KYC scams
+- UPI scams
+- Fake jobs
+- Investment scams
+- Courier scams
+- Government impersonation
+- OTP scams
+- Fake customer support
+
+WITH AI:
+Build the main AI analysis system.
+
+Input:
+“Your SBI account will be blocked. Complete KYC immediately: [link]”
+
+Output should be structured:
+
+Risk: HIGH
+Score: 94
+Type: KYC PHISHING
+Reasons:
+1. Creates urgency
+2. Impersonates a bank
+3. Suspicious external link
+
+Recommendation:
+DO NOT CLICK / SHARE INFORMATION
+
+YOUR OUTPUT:
+- AI analysis API
+- Detection prompt
+- Structured JSON response
+- Risk scoring system
+- At least 30 test examples
+
+━━━━━━━━━━━━━━━━━━━━
+👤 MEMBER 3 — SCREEN + OCR
+━━━━━━━━━━━━━━━━━━━━
+
+STUDY:
+- Screenshots
+- OCR (Optical Character Recognition)
+- Computer vision
+- Image → text
+- Processing screenshots
+- Privacy considerations
+
+RESEARCH:
+Find the best practical OCR library/API we can use.
+
+Goal:
+
+User sees scam on screen
+↓
+ScamShield captures/retrieves relevant screen content
+↓
+OCR extracts text
+↓
+AI analyses it
+↓
+Warning appears
+
+WITH AI:
+Ask AI to build the OCR pipeline.
+Test it with:
+- WhatsApp screenshots
+- SMS screenshots
+- Websites
+- Bank messages
+- QR screenshots
+
+YOUR OUTPUT:
+A working function:
+
+Screenshot → Text → AI → Result
+
+Also document exactly what permissions the application needs.
+
+━━━━━━━━━━━━━━━━━━━━
+👤 MEMBER 4 — BROWSER SECURITY
+━━━━━━━━━━━━━━━━━━━━
+
+STUDY:
+- Browser extensions
+- Chrome/Chromium extension architecture
+- Manifest V3
+- Content scripts
+- URL interception
+- Phishing detection
+
+RESEARCH:
+Study how browser security extensions detect suspicious websites.
+
+WITH AI:
+Build a browser extension that:
+- Reads the current URL
+- Sends it to our backend
+- Gets risk assessment
+- Displays warning
+- Detects suspicious links on webpages
+
+Example:
+
+User opens:
+fake-sbi-login.com
+
+Extension:
+🔴 HIGH RISK
+
+“Possible bank impersonation.”
+
+YOUR OUTPUT:
+Working Chrome/Chromium extension connected to ScamShield.
+
+━━━━━━━━━━━━━━━━━━━━
+👤 MEMBER 5 — QR + URL ANALYSIS
+━━━━━━━━━━━━━━━━━━━━
+
+STUDY:
+- QR codes
+- QR decoding
+- URLs
+- Domains
+- URL shorteners
+- Homograph attacks
+- Domain spoofing
+- HTTPS
+- Redirects
+
+RESEARCH:
+Understand how malicious URLs differ from legitimate ones.
+
+WITH AI:
+Build:
+
+QR image
+↓
+Decode QR
+↓
+Extract URL/payment information
+↓
+Analyse URL
+↓
+AI
+↓
+Risk score
+
+Also create rules for suspicious URLs.
+
+Examples:
+- Fake domains
+- Misspelled brands
+- URL shorteners
+- Strange subdomains
+- Suspicious redirects
+
+YOUR OUTPUT:
+QR scanner + URL analysis module.
+
+━━━━━━━━━━━━━━━━━━━━
+👤 MEMBER 6 — CLIPBOARD + DEVICE MONITORING
+━━━━━━━━━━━━━━━━━━━━
+
+STUDY:
+- Clipboard APIs
+- System notifications
+- Background monitoring
+- OS permissions
+- Security/privacy limitations
+
+RESEARCH:
+Find out what information we can realistically monitor on our chosen OS.
+
+Potential examples:
+
+User copies:
+“upi://pay?...”
+
+ScamShield:
+→ analyses it
+→ detects suspicious payment information
+→ warns user
+
+Also investigate whether we can safely detect relevant notifications.
+
+WITH AI:
+Ask AI to implement the monitoring system.
+
+IMPORTANT:
+Do NOT secretly collect everything on the computer.
+
+Only collect what is necessary for our prototype and clearly explain permissions.
+
+YOUR OUTPUT:
+Working clipboard monitoring + notification/event detection where technically possible.
+
+━━━━━━━━━━━━━━━━━━━━
+👤 MEMBER 7 — DATABASE + SCAM INTELLIGENCE
+━━━━━━━━━━━━━━━━━━━━
+
+STUDY:
+- Databases
+- JSON
+- Scam pattern storage
+- Threat intelligence
+- Data normalization
+- Feedback systems
+
+RESEARCH:
+Create a database of at least 50 realistic scam examples.
+
+Categories:
+- UPI
+- KYC
+- Bank
+- Job
+- Investment
+- Courier
+- Government
+- Social media
+- OTP
+- Customer care
+
+Store:
+
+message
+scam_type
+risk
+indicators
+recommended_action
+
+WITH AI:
+Use AI to help generate realistic examples, BUT manually verify them.
+
+Also build:
+
+User says:
+“ScamShield was wrong.”
+
+↓
+Store feedback
+
+This can eventually improve the detection system.
+
+YOUR OUTPUT:
+Scam database + feedback system + API for accessing it.
+
+━━━━━━━━━━━━━━━━━━━━
+👤 MEMBER 8 — UI / UX
+━━━━━━━━━━━━━━━━━━━━
+
+STUDY:
+- Security dashboard design
+- Notification design
+- Risk visualization
+- UX for warnings
+- Dark/light mode
+- Accessibility
+
+RESEARCH:
+Look at how antivirus/security applications communicate danger without overwhelming users.
+
+Our UI should NOT look like a generic AI dashboard.
+
+MAIN SCREENS:
+
+1. Home
+2. Current protection status
+3. Threat detected popup
+4. Threat history
+5. Analysis details
+6. Settings
+7. Privacy/permissions
+
+Example:
+
+🔴 HIGH RISK
+
+“Possible UPI Scam”
+
+Why?
+• Suspicious payment request
+• Unknown sender
+• Urgent language
+
+WHAT TO DO:
+Don't pay
+Don't share OTP
+Verify the recipient
+
+WITH AI:
+Use AI to generate the UI code, but make sure it matches our actual backend.
+
+YOUR OUTPUT:
+Complete polished interface connected to real data.
+
+━━━━━━━━━━━━━━━━━━━━
+👤 MEMBER 9 — TESTING + RED TEAM
+━━━━━━━━━━━━━━━━━━━━
+
+YOU ARE EXTREMELY IMPORTANT.
+
+STUDY:
+- Software testing
+- Cybersecurity testing
+- False positives
+- False negatives
+- Prompt injection
+- Adversarial inputs
+- Scam variations
+
+Create at least:
+
+30 scam cases
+20 genuine cases
+10 tricky cases
+
+Test things like:
+
+“Your bank account will be blocked today.”
+
+vs
+
+“Your bank account statement is available.”
+
+Also test:
+- Misspellings
+- Hindi/English mixed messages
+- Shortened URLs
+- Screenshots
+- Fake logos
+- Fake government messages
+- AI-generated scams
+- Very convincing scams
+
+WITH AI:
+Ask AI to behave like a scammer and generate new scam variations.
+
+Then test whether ScamShield catches them.
+
+YOUR OUTPUT:
+Testing report:
+
+Total tests: 60
+Correct: 53
+False positives: 4
+False negatives: 3
+
+Find weaknesses and send them back to the relevant developers.
+
+━━━━━━━━━━━━━━━━━━━━
+👤 MEMBER 10 — INTEGRATION + DEMO / PRESENTATION
+━━━━━━━━━━━━━━━━━━━━
+
+STUDY:
+- System architecture
+- APIs
+- How all modules communicate
+- Git/GitHub
+- Demo storytelling
+- Technical presentations
+
+RESEARCH:
+Understand EVERY component of the project at a high level.
+
+You need to be able to explain:
+
+User
+↓
+ScamShield background service
+↓
+Detection module
+↓
+OCR / URL / QR / clipboard
+↓
+AI engine
+↓
+Risk engine
+↓
+Warning
+↓
+Database/history
+
+WITH AI:
+Create:
+- Architecture diagram
+- Presentation
+- Demo script
+- Project documentation
+- README
+- Technical explanation
+
+YOUR MAIN JOB:
+Create a perfect 3–5 minute demo.
+
+Example:
+
+1. ScamShield is running.
+2. Receive fake bank message.
+3. System detects it.
+4. Warning appears.
+5. Click “Why?”
+6. AI explains the scam.
+7. Show risk score.
+8. Show scam history.
+9. Demonstrate QR/URL detection.
+10. Explain how this could scale.
+
+━━━━━━━━━━━━━━━━━━━━
+🔥 EVERYONE — AI RULES
+━━━━━━━━━━━━━━━━━━━━
+
+Everyone is allowed to use AI.
+
+BUT FOLLOW THIS:
+
+❌ Don't say:
+“AI, make my entire project.”
+
+Instead:
+
+1. Ask AI to explain the technology.
+2. Ask AI to propose an architecture.
+3. Ask AI to generate a small component.
+4. Run it.
+5. Test it.
+6. Fix errors with AI.
+7. Understand what it does.
+8. Integrate it into our project.
+
+Every person must be able to explain their own module to the judges.
+
+━━━━━━━━━━━━━━━━━━━━
+🎯 FINAL GOAL
+━━━━━━━━━━━━━━━━━━━━
+
+We are NOT trying to make a fake-looking demo.
+
+We want:
+
+INPUT
+↓
+DETECTION
+↓
+AI ANALYSIS
+↓
+RISK SCORE
+↓
+EXPLANATION
+↓
+WARNING
+↓
+USER ACTION
+
+And the entire thing should feel like ONE real product.
+
+The most important thing is integration.
+
+If your individual module works but doesn't connect with the rest of ScamShield, your task isn't finished.

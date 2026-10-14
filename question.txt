@@ -1,0 +1,62 @@
+How is your idea different from existing apps like Guardio?”
+1. It would be a full operating system scale software not just an extension. 
+    Therefore looking at every sigle aspect of scam detection in a system.
+2. It would not only detect threats but also teach a person what the threat really was.
+
+“How will your software actually monitor other apps?”
+Screen analysis
+
+“Won't this violate user privacy?”
+Algorithms would run locally which would be audited by independent firms.
+
+“Will all the user's messages/screenshots be sent to your AI?”
+The messages would be kept in the local system's ai only. 
+The user/ai can also flag certain inividuals as safe/private for no chat to be read.
+
+“How will you detect a completely new type of scam?”
+It would look for patterns in the behavior like:- Urgency, payment request, asking for permision access.
+
+“What happens if your AI incorrectly marks a genuine message as a scam?”
+The user has the access to manually flag what he wants into safe
+
+“Can scammers bypass your system?”
+NO, The system on discoverig new scams/loopholes can send reports to us to deal with new problems
+
+“How will you detect scams in WhatsApp/SMS if you don't control those apps?”
+screen visibility
+
+“What happens when the user receives a suspicious QR code?”
+the system scans the qr and sends warning signs/pop-ups
+
+“How will you detect UPI/payment scams?”
+We'd focus on the behaviour of the person asking for the payment
+
+“Does it work on Android, Windows, or both?”
+Planning for both ofc
+
+“Why would someone install your software when browsers already provide protection?”
+It ain't a browser based extension but full os safety
+
+“What AI model are you using and why?”
+Padhna padega abhi
+
+“What data did you use to train/test the AI?”
+Padhna padega abhi gng
+
+“How will you keep your scam database updated?”
+The system on discoverig new scams/loopholes can send reports to us to deal with new problems
+
+“Can this work without internet?”
+ Mostly
+
+“How will you make money from it?”
+ idk maybe subscriptions
+
+“What happens if your service goes down?”
+    The local system can fall back to a previous version of our software
+
+“How will you measure whether your system is actually effective?”
+    Experiments on actual scammers with possible constrains and individual auditing
+
+“Can you demonstrate a real scam being detected live?
+ yeah why not!
