@@ -1,0 +1,14 @@
+#box {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    transition: width 0.3s, height 0.1s, background-color 0.4s;
+    border: 5px solid black;
+    border-radius: 4px;
+}
+
+#box:hover {
+    width: 800px;
+    height: 200px;
+    background-color: Red;
+}
